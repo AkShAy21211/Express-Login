@@ -1,0 +1,43 @@
+.error {
+    color: red;
+    padding: 5px 0px;
+  }
+
+  .labell {
+    font-weight: 400;
+    margin-top: 2px;
+    color: black;
+  }
+  body{
+    background-color: black;
+  }
+  .h1{
+      font-size: 72px;
+  background: -webkit-linear-gradient(rgb(173, 65, 2), rgb(195, 204, 22));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  .card-title{
+    color: black;
+    margin-top: 10px;
+  }
+  .formbox{
+    width: 350px;
+    height: 400px;
+    box-shadow: 0px 1px 10px white;
+    border-radius: 20px;
+    background-color:white;
+    background-image: url("https://images.pexels.com/photos/845405/pexels-photo-845405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    object-fit:cover;
+    display: block;
+    position: static;
+    
+}
+.form-control{
+
+    position:relative;
+    width: 300px;
+    left: 10px;
+    font-size: 15px;
+}

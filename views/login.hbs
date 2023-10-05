@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/css/login.css">
+
+<div class="h1  my-5 d-flex p-2 justify-content-center align-items-center ">Welcome to DriveEpic </div>
+<section class="vh-80">
+  <div class="container h-70  col-xl-3 formbox ">
+
+    <div class="login d-flex justify-content-center align-items-center ">
+      <h4 class="card-title fw-bold">Login</h4>
+    </div>
+
+    <form action="/login" method="POST" id="loginForm">
+      {{#if err}}
+      <div class="" style="display:flex; justify-content:center">
+        <div class="err text-danger ">
+          <p>{{this.err}}</p>
+        </div>
+      </div>
+      {{/if}}
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <h6 class="form-label labell  fw-normal" for="form3Example3">Email address</h6>
+        <input type="email" id="form3Example3" name="Email" class="form-control form-control-lg"
+          placeholder="Enter your Email" />
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-3">
+        <h6 class="form-label labell  fw-normal" for="form3Example4">Password</h6>
+        <input type="password" id="form3Example4" name="Password" class="form-control form-control-lg"
+          placeholder="Enter password" />
+      </div>
+
+
+      <div class="text-center text-lg-start mt-4 pt-2 d-flex justify-content-center align-items-center ">
+        <button type="submit" class="btn btn-success btn-lg"
+          style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+      </div>
+
+    </form>
+
+
+
+  </div>
+
+</section>
+
+<script>
+  $('#loginForm').validate({
+    rules: {
+      Email: {
+        required: true,
+      },
+      Password: {
+        required: true,
+        minlength: 4
+      }
+    },
+    messages: {
+      required: "This field is requied",
+      minlength: "minimumm 4 required"
+    }
+  });
+</script>
